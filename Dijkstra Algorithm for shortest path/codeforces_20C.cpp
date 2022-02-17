@@ -65,7 +65,6 @@ int main()
     {
         vector<int> path;
 
-        //for (v = n; v != -1; v = par[v]) path.push_back(v);
         v = n;
         while(v!=-1)
             path.push_back(v), v=par[v];
