@@ -17,9 +17,9 @@ int orientation(Point a, Point b, Point c)
     else return 2; // counterclockwise
 }
 
-void convexHull(int n)
+bool convexHull(int n)
 {
-    if(n<3) return; // there must be 3 points
+    if(n<3) return false;// there must be 3 points
 
     // initialy push all the value of flags -1
     for(int i=0; i<n; i++) flags.push_back(-1);
@@ -46,7 +46,7 @@ void convexHull(int n)
         flags[a] = b;
         a = b;
     } while (a != left);
-    
+    return true;
 }
 
 int main()
@@ -59,7 +59,12 @@ int main()
         cin >> point.x >> point.y;
         points.push_back(point);
     }
-    convexHull(n);
+    bool result = convexHull(n);
+    if(!result)
+    {
+        cout << "No convex hull exist for 2 points" << endl;
+        return 0;
+    }
     for(int i=0; i<n; i++)
     {
         if(flags[i] != -1)

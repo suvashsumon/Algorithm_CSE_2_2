@@ -70,7 +70,7 @@ void convexHull(Point points[], int n)
 // Driver program to test above functions
 int main()
 {
-    Point points[] = {{0, 3}, {2, 2}, {1, 1}, {2, 1}, {3, 0}, {0, 0}, {3, 3}};
+    Point points[] = {{0, 0}, {2, 2}, {1, 1}, {2, 1}, {3, 0}, {0, 3}, {3, 3}};
     cout << "The points in the convex hull are: ";
     int n = sizeof(points) / sizeof(points[0]);
     convexHull(points, n);

@@ -1,0 +1,1 @@
+{"name":"Local: imagegrid","url":"/home/suvashkumar/Desktop/CSES/imagegrid.cpp","tests":[{"id":1642008863797,"input":"5 5\nWWBWB\nWWBWW\nBBWWB\nWWWBW\nWWWBW","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/suvashkumar/Desktop/CSES/imagegrid.cpp","group":"local","local":true}
